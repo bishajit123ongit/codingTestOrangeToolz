@@ -20,6 +20,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/plans', 'PlanController@index')->name('plans.index');
     Route::get('/plan/{plan}', 'PlanController@show')->name('plans.show');
     Route::get('/plans/create', 'PlanController@create')->name('plans.create');
+    Route::post('/plans/store', 'PlanController@store')->name('plans.store');
 });
 
 Auth::routes();

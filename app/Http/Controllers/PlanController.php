@@ -23,4 +23,15 @@ public function create(){
     return view('plans.create');
 }
 
+public function store(Request $request){
+    $plan = Plan::create([
+     'name'=>$request->name,
+     'slug'=>$request->slug,
+     'stripe_plan'=>$request->stripe_plan,
+     'cost'=>$request->cost,
+     'description'=>$request->description,
+    ]);
+    return redirect(route('plans.index'));
+}
+
 }

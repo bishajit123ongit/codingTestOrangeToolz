@@ -9,6 +9,7 @@
             </div>
             <div class="card">
                 <form action="#" method="post" id="payment-form">
+                @method('get')
                     @csrf                    
                     <div class="form-group">
                         <div class="card-header">

@@ -17,7 +17,8 @@
      @endif
 
 	<div class="card-body">
-		<form action="" method="POST">
+		<form action="{{route('plans.store')}}" method="POST">
+        @csrf
 			<div class="form-group">
 				<label for="name">Name</label>
 				<input type="text" name="name" class="form-control">
