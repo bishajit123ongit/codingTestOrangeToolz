@@ -19,4 +19,8 @@ public function show(Plan $plan, Request $request)
      return view('plans.show', compact('plan'));
 }
 
+public function create(){
+    return view('plans.create');
+}
+
 }

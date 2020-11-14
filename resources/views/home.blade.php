@@ -31,7 +31,10 @@
                         </tbody>
                     </table>
                         @if(Auth::user()->status!=1)
-                            <button class="btn btn-success">Activate</button>
+                        
+                            
+                            <a href="{{route('plans.create')}}"style="color:white;" class="btn btn-success">Activate</a>
+                            
                         @endif
                 </div>
             </div>
