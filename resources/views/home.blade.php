@@ -12,6 +12,7 @@
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
+                        
                     @endif
                     <table class="table">
                         <tbody>
